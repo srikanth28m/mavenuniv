@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="facultylogin.css"/>
+
+<script src="facultylogin.js">
+
+</script>
+
+</head>
+
+<body>
+<div id="h1div">
+<h1 style="color:#D8D8D8;">My University</h1>
+</div>
+
+<div>
+<h2 style="width: 300px;margin:auto;">Faculty Login</h2>
+</div>
+
+<div id="container">
+<div id="navigation">
+<ul id="navmenu">
+<li><a href="MyUniversity.html">Home</a></li>
+<li id="campdropdown"><a>CampusLogin</a>
+<div id="campdropdown-content">
+<a href="stlogin.html">Student Login</a>
+<a href="facultylogin.html">Faculty Login</a>
+</div>
+</li>
+<li id=sdropdown><a>Schools</a>
+<div id="sdropdown-content">
+<a href="#">school of MS in computer science</a>
+<a href="#">school of MS in informational technology</a>
+<a href="#">school of MS in MBA</a>
+</div>
+</li>
+<li id="oudropdown"><a href="#">OurUniversity</a>
+<div id="oudropdown-content">
+<a href="#">Location & Transport</a>
+<a href="#">Accredation</a>
+<a href="#">Why MyUniversity</a>
+<a href="#">Office of University & Student Affairs</a>
+</div>
+</li>
+</ul>
+</div>
+</div>
+
+<div class=form>
+  <form action="controller2">
+<table id="signin" width="1100">
+<tr >
+    <td for="facultyname">Faculty Name</td>
+    <td width="1000"><input type="text" id="facultyname" name="name" >
+    <div id="ajaxresponsefield" style="color:red;"></div>
+    </td>
+</tr>
+<tr>
+    <td for="password">Password</td>
+    <td><input type="text" id="idnumber" name="pswd"></td>
+</tr>
+<tr>
+<td for="depart">Department</td>
+    <td><select id="deprtment" name="department">
+      <option value="IT">IT</option>
+      <option value="Computer Science">Computer Science</option>
+      <option value="MBA">MBA</option>
+    </select></td>
+ </tr> 
+<tr>
+  <td> <input  type="submit" value="LOG IN" ></td>
+</tr>
+  </form>
+</div>
+</body>
+</html>
+

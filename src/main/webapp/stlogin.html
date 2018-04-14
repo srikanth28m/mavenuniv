@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+<link rel="stylesheet" type="text/css" href="stlogin.css"/>
+
+<script src="stlogin.js">
+
+</script>
+
+
+
+</head>
+<body>
+
+
+
+
+<div id="h1div">
+<h1 style="color:#D8D8D8;">My University</h1>
+</div>
+
+<div >
+<h2 style="width: 300px;margin:auto;">Student Login
+</h2>
+
+</div>
+
+
+<div id="container">
+<div id="navigation">
+<ul id="navmenu">
+<li><a href="MyUniversity.html">Home</a></li>
+<li id="campdropdown"><a>CampusLogin</a>
+<div id="campdropdown-content">
+<a href="stlogin.html">Student Login</a>
+<a href="facultylogin.html">Faculty Login</a>
+</div>
+</li>
+<li id=sdropdown><a>Schools</a>
+<div id="sdropdown-content">
+<a href="#">school of MS in computer science</a>
+<a href="#">school of MS in informational technology</a>
+<a href="#">school of MS in MBA</a>
+</div>
+</li>
+<li id="oudropdown"><a href="#">OurUniversity</a>
+<div id="oudropdown-content">
+<a href="#">Location & Transport</a>
+<a href="#">Accredation</a>
+<a href="#">Why MyUniversity</a>
+<a href="#">Office of University & Student Affairs</a>
+</div>
+</li>
+</ul>
+</div>
+</div>
+
+<div class=form>
+  
+<div id="divregister" style="display:block;">
+*please register if you are new student &nbsp <input type="button" value="Register" onclick="newStudentRegister()"/>
+</div>
+<div id="divlogin" style="display:none;">
+*please login if you are registered &nbsp <input type="button" value="LogIn" onclick="registerStudentLogin()"/>
+</div>
+
+<form action="controller3">
+
+<table id="tableregister" width="1100" style="display:none;">
+<tr>
+<td for="registerstudentid">Student Id</td>
+<td width="1000"><input type="text" id="registerstudentid" name="registerid" onfocusout="registerStudentExist()" required/>
+<div style="color: red;" id="registerresponsefield" ></div>
+    </td>
+</tr>
+
+<tr>
+    <td for="firstname">First Name</td>
+    <td><input type="text" id="fname" name="firstname" required/></td>
+</tr>
+
+<tr>
+    <td for="lastname">Last Name</td>
+    <td><input type="text" id="lname" name="lastname" required/></td>
+</tr>
+<tr>
+    <td for="rsemester">Semester</td>
+    <td><select id="rsem" name="rsemester" />
+      <option value="semester1">semester1</option>
+    	</select>
+    </td> 
+</tr>
+
+<tr>
+    <td for="rpassword">Password</td>
+    <td><input type="password" id="cpswd" name="rpassword" required/></td>
+</tr>
+
+<tr>
+
+  <td> <input  type="submit" value="Register" /></td>
+</tr>
+</table>
+</form>
+
+<form action="controller1">
+<table id="signin" width="1100" style="display:block;">
+<tr >
+    <td for="studentid">Student Id</td>
+    <td width="1000"><input type="text" id="studentid" name="id" onfocusout="doesUserExist()" required/>
+    <div style="color: red;" id="ajaxresponsefield" ></div>
+    </td>
+    
+</tr>
+<tr>
+    <td for="password">Password</td>
+    <td><input type="password" id="idnumber" name="pswd" required/></td>
+</tr>
+<tr>
+
+<td for="semester">Semester</td>
+    <td><select id="semster" name="semester"/>
+      <option value="semester1">semester1</option>
+      <option value="semester2">semester2</option>
+      <option value="semester3">semester3</option>
+    </select></td> 
+ </tr> 
+<tr>
+
+  <td> <input  type="submit" value="LOG IN" /></td>
+</tr>
+  </form>
+</div>
+</body>
+</html>
+
